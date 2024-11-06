@@ -2,6 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -12,11 +14,15 @@ public class Menu {
 		
 		while(true) {
 			
+			System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
 			System.out.println("***********************************************");
 			System.out.println("                                               ");
+			System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT);
 			System.out.println("                 FATIBANK                      ");
+			System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
 			System.out.println("                                               ");
 			System.out.println("***********************************************");
+			System.out.println(Cores.TEXT_WHITE_BOLD);
 			System.out.println("                                               ");
 			System.out.println("    1 - Criar Conta                            ");		
 			System.out.println("    2 - Listar Todas as Contas  	           ");
@@ -28,7 +34,9 @@ public class Menu {
 			System.out.println("    8 - Transferir Valores entre Contas        ");		
 			System.out.println("    9 - Sair      	                           ");		
 			System.out.println("                                               ");
+			System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
 			System.out.println("***********************************************");
+			System.out.println(Cores.TEXT_WHITE_BOLD);
 			System.out.println("                                               ");
 			System.out.println("    Entre com a opção desejada:                ");
 		
