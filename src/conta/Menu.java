@@ -1,7 +1,7 @@
 package conta;
 
 import java.util.Scanner;
-import conta.model.Conta;
+import conta.conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -83,7 +83,6 @@ public class Menu {
 
                 case 6:
                     System.out.println("Sacar");
-                    ler = ;
                     break;
 
                 case 7:
