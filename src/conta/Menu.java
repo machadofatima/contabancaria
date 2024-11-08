@@ -1,24 +1,34 @@
 package conta;
 
 import java.util.Scanner;
-import conta.conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
 
+    public static Scanner ler = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        // Teste da classe conta
-        Conta c1 = new Conta("Adriana", 123, 12345,6789,1000.0f);
-        c1.visualizar();
-        c1.sacar(120000.0f);
-        c1.visualizar();
-        c1.depositar(5000.0f);
-        c1.visualizar();
-
-        Scanner ler = new Scanner(System.in);
-
         int opcao;
+
+        // Teste da Classe Conta Corrente
+        ContaCorrente cc1 = new ContaCorrente("Betina", 123, 12345,1,10000.0f, 25000000.0f);
+        cc1.visualizar();
+        cc1.sacar(1200.0f);
+        cc1.visualizar();
+        cc1.depositar(5000.0f);
+        cc1.visualizar();
+
+        // Teste da Classe Conta Poupança
+        ContaPoupanca cp1 = new ContaPoupanca("Cléo",321,54321,2,10000.0f,15);
+        cp1.visualizar();
+        cp1.sacar(1200.0f);
+        cp1.visualizar();
+        cp1.depositar(5000.0f);
+        cp1.visualizar();
+
 
         while (true) {
 
@@ -47,7 +57,6 @@ public class Menu {
             System.out.println(Cores.TEXT_WHITE_BOLD);
             System.out.println("                                               ");
             System.out.println("    Entre com a opção desejada:                ");
-
             opcao = ler.nextInt();
 
             if (opcao == 9) {
@@ -56,7 +65,6 @@ public class Menu {
                 ler.close();
                 System.exit(0);
             }
-
 
 
             switch (opcao) {

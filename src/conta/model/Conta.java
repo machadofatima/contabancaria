@@ -1,6 +1,8 @@
-package conta.conta.model;
+package conta.model;
 
-public class Conta {
+import conta.util.Cores;
+
+public abstract class Conta {
 
     private String titular;
     private int numero_conta;
@@ -80,7 +82,7 @@ public class Conta {
     public void visualizar() {
         String tipo = "";
 
-        switch (this.tipo) {
+        switch(this.tipo) {
 
             case 1:
                 tipo = "Conta Corrente";
@@ -91,15 +93,22 @@ public class Conta {
                 break;
         }
 
+        System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
         System.out.println("***********************************************");
+        System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT);
         System.out.println("Dados da Conta ");
+        System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
         System.out.println("***********************************************");
+        System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT);
         System.out.println("Número da Conta: " + this.numero_conta);
         System.out.println("Agência: " + this.agencia);
         System.out.println("Tipo da Conta: " + tipo);
         System.out.println("Titular: " + this.titular);
         System.out.println("Saldo: " + this.saldo);
+        System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
         System.out.println("***********************************************");
+        System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT);
+
     }
 
 
