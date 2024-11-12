@@ -99,7 +99,7 @@ public abstract class Conta {
         System.out.println("Dados da Conta ");
         System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
         System.out.println("***********************************************");
-        System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT);
+        System.out.println(Cores.TEXT_WHITE_BRIGHT);
         System.out.println("Número da Conta: " + this.numero_conta);
         System.out.println("Agência: " + this.agencia);
         System.out.println("Tipo da Conta: " + tipo);
@@ -107,7 +107,7 @@ public abstract class Conta {
         System.out.println("Saldo: " + this.saldo);
         System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT);
         System.out.println("***********************************************");
-        System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT);
+        System.out.println(Cores.TEXT_WHITE_BRIGHT);
 
     }
 
